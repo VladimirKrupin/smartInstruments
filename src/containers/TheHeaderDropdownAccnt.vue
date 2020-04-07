@@ -59,7 +59,7 @@
     <CDropdownItem>
       <CIcon name="cil-shield-alt" /> Lock Account
     </CDropdownItem>
-    <CDropdownItem>
+    <CDropdownItem  v-on:click="logout()">
       <CIcon name="cil-lock-locked" /> Logout
     </CDropdownItem>
   </CDropdown>
@@ -72,6 +72,12 @@ export default {
     return { 
       itemsCount: 42
     }
+  },
+  methods: {
+    logout: function () {
+      localStorage.removeItem('access_token');
+      this.$router.push({name: 'Login'});
+      },
   }
 }
 </script>
