@@ -1,7 +1,7 @@
 <template>
   <CContainer class="d-flex content-center min-vh-100">
-    <CRow>
-      <CCol>
+    <CRow class="col-md-6 col-sm-12">
+      <CCol >
         <CCardGroup>
           <CCard class="p-2">
             <CCardBody>
