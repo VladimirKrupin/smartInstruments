@@ -15,9 +15,9 @@ import Auth from "./plugins/Auth";
 Vue.use(firestorePlugin)
 
 firebase.initializeApp({
-  projectId: 'moneybox-521ab',
-  databaseURL: 'https://moneybox-521ab.firebaseio.com',
-  apiKey: 'AIzaSyD1HZ2k9R1t92qFw49Fn1OtRnnGaOs2Oak'
+  projectId: process.env.VUE_APP_PROJECT_ID,
+  databaseURL: process.env.VUE_APP_DATABASE_URL,
+  apiKey: process.env.VUE_APP_API_KEY
 })
 
 Vue.config.performance = true
