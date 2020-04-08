@@ -14,6 +14,16 @@ export default [
       },
       {
         _name: 'CSidebarNavTitle',
+        _children: ['SmartInstruments']
+      },
+      {
+        _name: 'CSidebarNavItem',
+        name: 'moneyBox',
+        to: '/moneyBox',
+        icon: 'cil-money'
+      },
+      {
+        _name: 'CSidebarNavTitle',
         _children: ['Theme']
       },
       {
@@ -49,7 +59,7 @@ export default [
           {
             name: 'Carousels',
             to: '/base/carousels'
-          }, 
+          },
           {
             name: 'Collapses',
             to: '/base/collapses'
